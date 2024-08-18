@@ -1,0 +1,108 @@
+/* BUTTON */
+
+
+.switch-btn-wrapper{
+display: flex;
+align-items: center;
+margin-top: 16px;
+gap: 16px;
+}
+
+
+.switch-btn-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 2px solid;
+    border-color:  #342628;
+    background-color: #FC4C28;
+    color:  #f7f1f0;
+}
+
+
+.switch-btn-right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 2px solid;
+    border-color:  #342628;
+    background-color: #FC4C28;
+    color:  #f7f1f0;
+}
+
+
+.switch-btn-left:hover{
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.switch-btn-right:hover{
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.order-btn {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color:#342628;
+    background-color: #FC4C28;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #f7f1f0;
+}
+
+
+.order-btn:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.add-btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+
+.add-btn:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.minus-btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+
+.minus-btn:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.trash-btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+
+.trash-btn:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}

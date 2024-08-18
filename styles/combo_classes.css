@@ -1,0 +1,22 @@
+/* COMBO CLASSES */
+
+
+.div {
+    width: 100%;
+    max-width: 1920px;
+}
+
+
+.div-seperator {
+    width: 100px;
+}
+
+
+.div-footer {
+    width: 100%;
+}
+
+
+.div-header {
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+/* STANDARD */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.d_none {
+    display: none;
+}

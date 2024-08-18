@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasty Goreng</title>
+    <link rel="icon" type="" href="./assets/icons/slider_icon.jpg">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/combo_classes.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/overlay_dialog.css">
+
+    <script src="./scripts/local_storage.js"></script>
+    <script src="./scripts/json.js"></script>
+    <script src="./scripts/html_templates.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body onload="init()">
+    <section id="header" class="header-wrapper ">
+        <!--  <header class="">
+            <a class="nav-links" href="#">
+                <b>About Our Food</b>
+            </a>
+            <a class="nav-links" href="#">
+                <b>Download App</b>
+            </a>
+            <a class="nav-links" href="#">
+                <b>Location</b>
+            </a>
+            <a class="nav-links" href="#">
+                <b>Opening Hours</b>
+            </a>
+            <a class="nav-links" href="#">
+                <b>Reservations</b>
+            </a>
+        </header> -->
+    </section>
+
+
+
+
+    <main>
+        <div class="overlay">
+            <div id="menu#" class="dialog-content-wrapper">
+                <img class="dialog-img" src="./assets/images/bananas.webp" alt="dish">
+                <div class="dialog-header">
+                    <span>${dish.order_number}</span>
+                    <h2>${dish.name}</h2>
+                </div>
+                <div class="dialog-info">
+                    <img class="veggie-img" src="${dish.veggie}" alt="veggie">
+                    <p>${dish.price.toFixed(2)} $</p>
+                    <p>${dish.description}</p>
+                </div>
+                <div class="dialog-select-wrapper">
+                    <h2>Select Toppings</h2>
+                    <div class="dialog-select">
+                        <input type="checkbox">
+                        ${dish.toppings[0]}
+                        <input type="checkbox">
+                        ${dish.toppings[1]}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-complete-wrapper div">
+            <section class="menu-wrapper">
+                <div id="hero" class="hero-wrapper">
+                    <!--  <div class="slider">
+                        <h1>
+                            Nasty Goreng
+                        </h1>
+                        <h2>
+                            <b>Spice Up Your Life</b>
+                            <h2>
+                    </div>
+
+                    <div class="slider-icon-wrapper">
+                        <img class="slider-icon" src="./assets/icons/slider_icon.jpg" alt="#">
+                    </div>
+
+                    <div class="welcome-text">
+                        <h2>
+                            Welcome to Nasty Goreng Your Gateway to Bold,
+                            Authentic Asian Street Food!
+                            <br>
+                            <br>
+                            At Nasty Goreng, we are all about bringing the vibrant and mouthwatering flavors of the Far
+                            East
+                            to your plate.
+                            <br>
+                            <br>
+                            Our menu is a celebration of Asia’s most beloved street food,
+                            crafted with passion and served with a twist. From the fiery heat of our signature
+                            stir-fried
+                            chicken, savory taste of our noodle dishes, every bite is an adventure.
+                            <br>
+                            <br>
+                            Whether you're here for a quick bite or a full meal,
+                            Nasty Goreng promises an unforgettable dining experience that’s as bold and unique as its
+                            name.
+                            <br>
+                            <br>
+                        </h2>
+                        <div class="seperator"></div>
+                    </div> -->
+                </div>
+
+                <div id="topbar" class="topbar-wrapper">
+                    <!-- <a class="topbar-tabs" href="#">
+                        <b>Starters</b>
+                    </a>
+                    <a class="topbar-tabs" href="#">
+                        <b>Main dishes</b>
+                    </a>
+                    <a class="topbar-tabs" href="#">
+                        <b>Desserts</b>
+                    </a>
+                    <a class="topbar-tabs" href="#">
+                        <b>Drinks</b>
+                    </a> -->
+                </div>
+
+                <div id="menu" class="menu-content-wrapper">
+                    <!-- <div class="category-wrapper">
+                        <h3>${Category/Starters}</h3>
+                        <img class="category-img" src="./assets/images/starters_img_1.jpg" alt="starter">
+                        <div class="dishes-wrapper">
+                            <div class="container-left">
+                                <span>${order_number}</span>
+                                <h4>${name}</h4>
+                                <img class="veggie-img" src="./assets/icons/vegetarian.svg" alt="veggie">
+                                <p>${price}</p>
+                                <p>${description}</p>
+                            </div>
+                            <div class="container-right">
+                                <img class="add-btn" src="./assets/icons/plus.png" alt="plus">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <section id="basket" class="basket-wrapper">
+                <!-- <div class="basket">
+                    <h3>Your Cart</h3>
+                    <div class="switch-btn-wrapper">
+                        <button class="switch-btn-left">
+                            <img class="btn-img" src="./assets/icons/take_away.png" alt="box">
+                            Take Away
+                        </button>
+                        <button class="switch-btn-right d_none">
+                            <img class="btn-img" src="./assets/icons/delivery.png" alt="bike">
+                            Delivery
+                        </button>
+                    </div>
+                    <div class="seperator-basket"></div>
+                    ${name}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque ipsam tenetur earum veritatis similique deleniti ab sit deserunt saepe?
+                    Facere sapiente incidunt maiores veritatis sit ab odio recusandae facilis illum!
+                    <div class="seperator-basket"></div>
+                    <h4>Subtotal:</h4>
+                    <p>${}</p>
+                    <h4>Delivery costs</h4> 
+                    <p>${}</p>
+                    <h4>Total:</h4>
+                    <p>${}</p>
+                    <button class="order-btn">Order Delivery</button>
+                </div> -->
+            </section>
+        </div>
+    </main>
+
+    <section id="location" class="find-us-wrapper">
+        <!-- <h5>FIND US AT</h5>
+        <div class="find-us-adress">
+            <img class="map-marker-icon" src="./assets/icons/map.png" alt="marker">
+            <p>Yogyakarta, Gg. Lesmana 2</p>
+        </div>
+        <iframe class="googlemaps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.3673115615172!2d110.36455872277597!3d-7.817889725609591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57bd37eef7a1%3A0x2988361ca3a83813!2sGg.%20Lesmana%202%2C%20Mantrijeron%2C%20Kec.%20Mantrijeron%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055143%2C%20Indonesien!5e0!3m2!1sde!2sde!4v1723971930146!5m2!1sde!2sde"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe> -->
+    </section>
+
+    <section id="footer" class="footer-wrapper">
+        <!--  <footer>
+
+        </footer> -->
+    </section>
+</body>
+
+</html>

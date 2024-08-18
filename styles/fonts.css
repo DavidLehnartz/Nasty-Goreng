@@ -1,0 +1,58 @@
+/* FONTS */
+
+
+h1 {
+    font-size: 80px;
+    margin: 0px;
+    color: orange;
+    color: #FC4C28;
+}
+
+
+h2 {
+    margin: 0px;
+    color: #342628;
+    font-size: 24px;
+
+}
+
+
+h3 {
+    margin: 40px 0px 16px 0px;
+    margin-bottom: 24px;
+    color: #342628;
+    font-size: 40px;
+}
+
+
+h4 {
+    margin: 0px;
+    color: #342628
+}
+
+
+h5{
+    margin: 0px;
+    color: #FC4C28;
+    font-size: 56px;
+}
+
+
+span {
+    font-size: 24px;
+    margin: 0px;
+    color: #342628a4;
+}
+
+
+p {
+    margin: 0px;
+    color: #342628;
+    font-size: 16px;
+}
+
+
+b {
+    margin: 0px;
+    color: #f7f1f0;
+}
