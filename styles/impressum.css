@@ -1,0 +1,30 @@
+/* IMPRESSUM */
+
+
+.body-impressum{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.main-impressum {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    flex: 1;
+    margin: 0px auto;
+    width: 100%;
+    background-color: #f7f1f0;
+}
+
+
+.impressum{
+    padding: 16px;
+}

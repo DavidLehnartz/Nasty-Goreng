@@ -3,32 +3,9 @@
 /* JSON */
 
 
+let isDeliverySelected = false;
+
 let myBasket = [];
-
-
-let myImages = [
-    "./assets/images/spring_rolls.jpg",
-    "./assets/images/edamame.jpg",
-    "./assets/images/gyoza.jpg",
-    "./assets/images/miso_soup.jpg",
-    "./assets/images/crab_rangoon.jpg",
-    "./assets/images/sushi_platter.jpg",
-    "./assets/images/pad_thai.webp",
-    "./assets/images/tos_chicken.jpg",
-    "./assets/images/pho.jpg",
-    "./assets/images/kung_pao.jpg",
-    "./assets/images/desserts_img.jpg",
-    "./assets/images/sticky_rice.jpg",
-    "./assets/images/bananas.webp",
-    "./assets/images/sesame_balls.jpg",
-    "./assets/images/green_cake.jpg",
-    "./assets/images/green_tea.webp",
-    "./assets/images/thai_tea.jpg",
-    "./assets/images/sake1.jfif",
-    "./assets/images/lychee1.jpg",
-    "./assets/images/bubble.jpg",
-];
-
 
 let myDishes = [
     {
@@ -58,6 +35,7 @@ let myDishes = [
         "img_src": "./assets/images/gyoza.jpg",
         "order_number": 5173,
         "name": "Gyoza",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 6.99,
         "description": "Pan-fried dumplings stuffed with seasoned pork and vegetables.",
         "amount": "5 pieces",
@@ -79,6 +57,7 @@ let myDishes = [
         "img_src": "./assets/images/crab_rangoon.jpg",
         "order_number": 7645,
         "name": "Crab Rangoon",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 7.49,
         "description": "Crispy wontons filled with a blend of crab meat and cream cheese.",
         "amount": "6 pieces",
@@ -89,6 +68,7 @@ let myDishes = [
         "img_src": "./assets/images/sushi_platter.jpg",
         "order_number": 8231,
         "name": "Sushi Platter",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 25.99,
         "description": "An assortment of fresh nigiri and rolls, served with soy sauce and wasabi.",
         "amount": "12 pieces",
@@ -99,6 +79,7 @@ let myDishes = [
         "img_src": "./assets/images/pad_thai.webp",
         "order_number": 9564,
         "name": "Pad Thai",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 14.99,
         "description": "Stir-fried rice noodles with shrimp, tofu, eggs, and peanuts in a tamarind sauce.",
         "amount": "1 plate",
@@ -109,6 +90,7 @@ let myDishes = [
         "img_src": "./assets/images/tos_chicken.jpg",
         "order_number": 6827,
         "name": "General Tso's Chicken",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 12.99,
         "description": "Crispy chicken pieces coated in a sweet and spicy sauce, served with steamed rice.",
         "amount": "1 plate",
@@ -119,6 +101,7 @@ let myDishes = [
         "img_src": "./assets/images/pho.jpg",
         "order_number": 7719,
         "name": "Pho",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 10.99,
         "description": "A fragrant Vietnamese noodle soup with beef, fresh herbs, and lime.",
         "amount": "1 bowl",
@@ -129,6 +112,7 @@ let myDishes = [
         "img_src": "./assets/images/kung_pao.jpg",
         "order_number": 8432,
         "name": "Kung Pao Chicken",
+        "veggie": "./assets/icons/spicy.svg",
         "price": 13.99,
         "description": "Stir-fried chicken with peanuts, vegetables, and chili peppers in a savory sauce.",
         "amount": "1 plate",
@@ -231,5 +215,6 @@ let myDishes = [
         "price": 4.49,
         "description": "Refreshing juice made from sweet and aromatic lychee fruit.",
         "amount": "1 glass",
+        "toppings": ["Small", "Large"]
     }
 ]

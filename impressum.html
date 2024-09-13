@@ -39,54 +39,19 @@
     <script src="./scripts/contact/contact_templates.js"></script>
     <script src="./scripts/impressum/impressum_templates.js"></script>
     <script src="./scripts/privacy/privacy_templates.js"></script>
+
 </head>
 
-<!-- TASKS
+<body class="body-impressum" onload="initImpressum()">
+    <section id="header_impressum" class="header-wrapper "></section>
 
-* Auf Git hochladen
--->
+    <main class="main-impressum div">
+        <section id="hero_impressum" class="hero-wrapper-contact"></section>
 
-<body onload="init()">
-    <section id="header" class="header-wrapper "></section>
-
-    <main>
-        <div id="overlay_placed_order" onclick="closeDialogPlacedOrder()" class="overlay-placed-order d_none ">
-            <div id="dialog_placed_order" onclick="event.stopPropagation()"
-                class="dialog-placed-order-basket-button-wrapper">
-            </div>
-        </div>
-
-        <div id="overlay_basket_mobile" onclick="toggleBasketMobile()"
-            class="overlay-basket-mobile basket-mobile-closed ">
-            <div id="basket_mobile" onclick="event.stopPropagation()" class="basket-mobile-wrapper "></div>
-        </div>
-
-        <div class="main-complete-wrapper div">
-            <section class="menu-wrapper">
-                <div id="hero" class="hero-wrapper"></div>
-
-                <div id="topbar" class="topbar-wrapper"></div>
-
-                <div id="menu" class="menu-content-wrapper"></div>
-            </section>
-
-            <section id="basket" class="basket-wrapper">
-                <div class="seperator-basket"></div>
-
-                <div id="ordered_dish" class="ordered-dishes-wrapper"></div>
-
-                <div class="seperator-basket"></div>
-
-                <div class="bill"></div>
-            </section>
-        </div>
+        <section id="impressum" class='impressum'></section>
     </main>
 
-    <section id="opening_hours" class="opening-hours-wrapper div"></section>
-
-    <section id="location" class="find-us-wrapper"></section>
-
-    <section id="footer" class="footer-wrapper"></section>
+    <section id="footer_impressum" class="footer-wrapper"></section>
 </body>
 
 </html>

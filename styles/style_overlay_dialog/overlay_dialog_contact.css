@@ -1,0 +1,77 @@
+/* OVERLAY / DIALOG CONTACT HTML */
+
+
+.overlay-contact {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(5px);
+}
+
+
+.dialog-content-contact-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 550px;
+    border-radius: 8px;
+    border: 2px solid #342628;
+    background-color: #f7f1f0;
+    padding: 16px;
+}
+
+
+.overlay-contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.overlay-contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.overlay-contact-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.overlay-contact-informations {
+    color: #FC4C28;
+    font-size: 24px;
+}
+
+
+.overlay-contact-informations:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 45, 255);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    color: #FC4C28;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}

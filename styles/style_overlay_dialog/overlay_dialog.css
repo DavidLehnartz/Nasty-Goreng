@@ -1,0 +1,242 @@
+/* OVERLAY / DIALOG  1 Version*/
+
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.583);
+}
+
+
+.dialog-content-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 550px;
+    border-radius: 8px;
+    border: 2px solid #342628;
+    background-color: #f7f1f0;
+    padding: 16px;
+}
+
+
+.dialog-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+
+.close-btn {
+    position: absolute;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+
+.dialog-header {
+    display: flex;
+    gap: 8px;
+}
+
+
+.dialog-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+
+.dialog-add-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+
+.dialog-add {
+    margin-top: 16px;
+}
+
+
+.checkbox {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.quantity-and-submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+
+.dialog-input {
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #342628;
+    background-color: #FC4C28;
+    color: #f7f1f0;
+    padding: 8px 8px;
+    font-size: bold;
+    scrollbar-color: #342628;
+}
+
+
+.dialog-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #342628;
+    background-color: #FC4C28;
+    width: 100%;
+    gap: 16px;
+    cursor: pointer;
+    padding: 0px 16px;
+    font-size: 16px;
+    color: #f7f1f0;
+}
+
+
+.dialog-submit-btn:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+.tax {
+    display: flex;
+    justify-content: end;
+    margin-top: 8px;
+    color: #342628;
+    font-size: 12px;
+}
+
+
+/* DIALOG/OVERLAY PLACED ORDER */
+
+
+.overlay-placed-order {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(5px);
+}
+
+
+.dialog-placed-order-basket-button-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+    border: 2px solid #342628;
+    background-color: #f7f1f0;
+    padding: 16px;
+}
+
+
+.overlay-placed-order-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.overlay-placed-order-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+.overlay-placed-order-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.overlay-placed-order-contact-informations {
+    color: #FC4C28;
+}
+
+
+.overlay-placed-order-contact-informations:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 45, 255);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    color: #FC4C28;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+
+/* OVERLAY BASKET MOBILE */
+
+
+.overlay-basket-mobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(2px);
+    transition: all 450ms ease-in-out;
+}
+
+
+@media(min-width:850px) {
+    .overlay-basket-mobile {
+        display: none;
+    }
+}
+
+
+@media(max-width:540px) {
+    .dialog-placed-order-basket-button-wrapper {
+        width: 250px;
+        height: 470px;
+    }
+}

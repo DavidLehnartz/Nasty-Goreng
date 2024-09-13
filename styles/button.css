@@ -1,51 +1,73 @@
 /* BUTTON */
 
 
-.switch-btn-wrapper{
-display: flex;
-align-items: center;
-margin-top: 16px;
-gap: 16px;
+.btn-basket-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 
-.switch-btn-left{
+.btn-toggle-left {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 8px 8px;
+    border: 1px solid #342628;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 16px;
-    border: 2px solid;
-    border-color:  #342628;
-    background-color: #FC4C28;
-    color:  #f7f1f0;
 }
 
 
-.switch-btn-right{
+.btn-toggle-right {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 8px 8px;
+    border: 1px solid #342628;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     cursor: pointer;
-    padding: 8px 16px;
-    border-radius: 16px;
-    border: 2px solid;
-    border-color:  #342628;
+}
+
+
+/* Orange Button (Active) */
+.btn-active {
     background-color: #FC4C28;
-    color:  #f7f1f0;
 }
 
 
-.switch-btn-left:hover{
-    transition: transform 0.5s;
-    transform: scale(1.05);
+/* Inactive Button (Gray) */
+.btn-inactive {
+    background-color: #ff2a000e;
 }
 
 
-.switch-btn-right:hover{
-    transition: transform 0.5s;
-    transform: scale(1.05);
+.btn-toggle-left-mobile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid #342628;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+
+.btn-toggle-right-mobile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 8px;
+    border: 1px solid #342628;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -53,11 +75,11 @@ gap: 16px;
     width: 100%;
     border-radius: 8px;
     border: 2px solid;
-    border-color:#342628;
+    border-color: #342628;
     background-color: #FC4C28;
-    padding: 8px 16px;
+    padding: 8px 8px;
     font-size: 16px;
-    margin-top: 16px;
+    margin: 32px 0;
     color: #f7f1f0;
 }
 
@@ -95,14 +117,33 @@ gap: 16px;
 }
 
 
-.trash-btn {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
+.dialog-close-btn {
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #342628;
+    background-color: #FC4C28;
+    padding: 8px 96px;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #f7f1f0;
 }
 
 
-.trash-btn:hover {
+.dialog-close-btn:hover {
     transition: transform 0.5s;
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+@media(max-width:400px) {
+    .btn-toggle-left-mobile {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+    .btn-toggle-right-mobile {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
 }

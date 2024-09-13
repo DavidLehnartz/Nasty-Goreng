@@ -1,0 +1,71 @@
+/*  BASKET MOBILE */
+
+
+.basket-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100vh;
+  border: 2px solid #342628;
+  box-shadow: 4px 8px 16px 0px;
+  background-color: #f7f1f0;
+  padding: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 250ms ease-in-out;
+}
+
+
+.basket-mobile {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0px 16px;
+}
+
+
+.close-btn-mobile-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.close-btn-basket-mobile {
+  width: 32px;
+  height: 32px;
+}
+
+
+.close-btn-basket-mobile:hover {
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+
+
+.basket-mobile-closed {
+  transform: translateX(100%);
+}
+
+
+@media(min-width:850px) {
+  .basket-mobile-wrapper {
+    display: none;
+  }
+}
+
+
+@media(max-width:500px) {
+  .basket-mobile-wrapper {
+    width: 300px;
+  }
+}
+
+
+@media(max-width:380px) {
+  .basket-mobile-wrapper {
+    width: 200px;
+  }
+}
