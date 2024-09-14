@@ -17,6 +17,43 @@ function init() {
 }
 
 
+function renderBasket() {
+    renderBasketTotals();      
+    renderOrderedDishes();       
+
+    saveToLocalStorage();
+    showOrHideCartInfo();
+    updateButtonState();
+    updateButtonStateMobile();
+    countItemsInHeader();
+}
+
+
+function renderBasketTotals() {
+    let basketContentRef = document.getElementById('basket');
+    let mobilBasketContentRef = document.getElementById('basket_mobile');
+
+    let totals = calculateTotals();
+
+    basketContentRef.innerHTML = getBasketTemplate(totals.subTotal, totals.deliveryCosts, totals.total);
+    mobilBasketContentRef.innerHTML = getMobileBasketTemplate(totals.subTotal, totals.deliveryCosts, totals.total);
+}
+
+
+function renderOrderedDishes() {
+    let orderedDish = document.getElementById('ordered_dish');
+    let mobileOrderedDish = document.getElementById('ordered_dish_mobile');
+
+    orderedDish.innerHTML = "";
+    mobileOrderedDish.innerHTML = "";
+
+    for (let indexBasket = 0; indexBasket < myBasket.length; indexBasket++) {
+        orderedDish.innerHTML += getAddDishToBasket(myBasket[indexBasket], indexBasket);
+        mobileOrderedDish.innerHTML += getAddDishToBasket(myBasket[indexBasket], indexBasket);
+    }
+}
+
+
 // Render Menu
 function renderMenu() {
     let menuContentRef = document.getElementById('menu');
@@ -25,35 +62,6 @@ function renderMenu() {
     for (let indexMenu = 0; indexMenu < myDishes.length; indexMenu++) {
         menuContentRef.innerHTML += getMenuTemplate(myDishes[indexMenu], indexMenu);
     }
-}
-
-
-// Render Basket
-function renderBasket() {
-    let basketContentRef = document.getElementById('basket');
-    let mobilBasketContentRef = document.getElementById('basket_mobile');
-
-    let totals = calculateTotals();
-
-    basketContentRef.innerHTML = getBasketTemplate(totals.subTotal, totals.deliveryCosts, totals.total);
-    mobilBasketContentRef.innerHTML = getMobileBasketTemplate(totals.subTotal, totals.deliveryCosts, totals.total);
-
-
-    let orderedDish = document.getElementById('ordered_dish');
-    let mobileOrderedDish = document.getElementById('ordered_dish_mobile')
-    orderedDish.innerHTML = "";
-    mobileOrderedDish.innerHTML = "";
-
-
-    for (let indexBasket = 0; indexBasket < myBasket.length; indexBasket++) {
-        orderedDish.innerHTML += getAddDishToBasket(myBasket[indexBasket], indexBasket);
-        mobileOrderedDish.innerHTML += getAddDishToBasket(myBasket[indexBasket], indexBasket);
-    }
-    saveToLocalStorage();
-    showOrHideCartInfo();
-    updateButtonState();
-    updateButtonStateMobile();
-    countItemsInHeader();
 }
 
 
@@ -341,13 +349,3 @@ function renderFooter() {
     let footerContentRef = document.getElementById('footer');
     footerContentRef.innerHTML += getFooterTemplate();
 }
-
-
-
-
-
-
-
-
-
-
