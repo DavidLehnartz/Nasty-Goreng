@@ -29,6 +29,7 @@ function renderBasket() {
 }
 
 
+// Render Basket Desktop And Mobil
 function renderBasketTotals() {
     let basketContentRef = document.getElementById('basket');
     let mobilBasketContentRef = document.getElementById('basket_mobile');
@@ -40,6 +41,7 @@ function renderBasketTotals() {
 }
 
 
+// Render Pushed Dishes To Basket
 function renderOrderedDishes() {
     let orderedDish = document.getElementById('ordered_dish');
     let mobileOrderedDish = document.getElementById('ordered_dish_mobile');
